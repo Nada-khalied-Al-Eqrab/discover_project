@@ -1,0 +1,299 @@
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family:'Times New Roman', Times, serif;
+  color: #fff;
+  background: url("../img/bg.gif") top center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(34, 34, 34, 0.336);
+}
+
+@media (min-width: 900px) {
+  body {
+   background-attachment:fixed;
+ } 
+}
+@media (max-width: 800px) {
+  body {
+   background-attachment:fixed;
+ } 
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ font-family:'Times New Roman', Times, serif;
+}
+img{
+  text-align: center;
+  align-items:center;
+}
+#main {
+  position: relative;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background:#ff9900;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #000000;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
+}
+
+#header h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#header h2 {
+  color: #eee;
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+#header .countdown {
+  margin-bottom: 80px;
+}
+
+#header .countdown div {
+  text-align: center;
+  margin: 10px;
+  width: 100px;
+  padding: 15px 0;
+  background: rgba(253, 153, 4, 0.178);
+  border-top: 5px solid #f79400;
+}
+
+#header .countdown div h3 {
+  font-weight: 700;
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+
+#header .countdown div h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 575px) {
+  #header .countdown div {
+    width: 70px;
+    padding: 10px 0;
+    margin: 10px 8px;
+  }
+
+  #header .countdown div h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  #header .countdown div h4 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+@keyframes animate-loading-notify {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#header .social-links {
+  margin-top: 10px;
+}
+
+#header .social-links a {
+  font-size: 24px;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1;
+  padding-top: 14px;
+  margin: 0 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+#header .social-links a:hover {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.233);
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# about Us
+--------------------------------------------------------------*/
+.about .content h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.about .content h3 {
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 24px;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding: 10px 0 0 28px;
+  position: relative;
+}
+
+.about .content ul i {
+  left: 0;
+  top: 12px;
+  position: absolute;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# سجل الان
+--------------------------------------------------------------*/
+.contact .php-email-form {
+  width: 100%;
+  padding: 30px;
+  padding-top: 0;
+}
+
+.contact .php-email-form a {
+  background: #ff9900;
+  border: 0;
+ border-radius: 5px;
+  padding: 10px 24px;
+ 
+  color: #fff;
+  transition: 0.4s;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.contact .php-email-form a:hover {
+  background: #000000;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: rgba(19, 19, 19, 0.4);
+  padding: 30px 0;
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+#footer .credits a {
+  color: #ff3333;
+}
